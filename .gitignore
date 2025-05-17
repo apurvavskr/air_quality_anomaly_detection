@@ -1,0 +1,17 @@
+# Ignore Python bytecode and environments
+*.pyc
+__pycache__/
+.venv/
+.env
+
+# Ignore Jupyter checkpoints and VS Code
+.ipynb_checkpoints/
+.vscode/
+
+# Ignore model files (unless you want to distribute pre-trained models)
+models/
+pca_model.joblib
+isoforest_model.joblib
+
+# Ignore cached/derived data
+data/pca_coordinates.csv
