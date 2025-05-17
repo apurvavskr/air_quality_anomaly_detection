@@ -1,17 +1,40 @@
-# Ignore Python bytecode and environments
+# --- Python Bytecode & Virtual Environments ---
 *.pyc
 __pycache__/
 .venv/
+.venv*/          # In case of .venv, .venv3, etc.
 .env
+env/
+ENV/
 
-# Ignore Jupyter checkpoints and VS Code
+# --- Jupyter & VS Code Artifacts ---
 .ipynb_checkpoints/
 .vscode/
 
-# Ignore model files (unless you want to distribute pre-trained models)
+# --- Model Files & Large Binary Artifacts ---
 models/
-pca_model.joblib
-isoforest_model.joblib
+*.joblib
+*.pkl
+*.h5
 
-# Ignore cached/derived data
+# --- Intermediate or Derived Data Files ---
 data/pca_coordinates.csv
+data/air_quality_processed.csv
+data/air_quality_preprocessed.csv
+
+# --- Downloaded Data Archives ---
+air+quality.zip
+
+# --- System/Editor Files ---
+.DS_Store
+Thumbs.db
+
+# --- Screenshots (Optional) ---
+# Uncomment to ignore screenshots, or leave as is to keep them in the repo
+# screenshots/
+
+# --- Logs ---
+*.log
+
+# --- Other Unneeded Files ---
+# Add any extra files you want to keep out of git here
